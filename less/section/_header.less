@@ -1,0 +1,137 @@
+.header{
+	font-size: 0;
+	 span, a {
+		.text-header;
+		line-height: 37px;
+	}
+	span{
+		margin-right: 18px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+.nav__topbar{
+	padding: 0px 18px;
+	background: #333439;
+	& a{
+		color: #9050CA;
+		text-decoration: none;
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+.nav__bottombar{
+	padding: 10px 0px;
+	background: #181A1C;
+}
+.nav__h-left {
+	text-align: left;
+	padding: 0;
+}
+.nav__h-right {
+	text-align: right;
+	padding: 0;
+}
+.fa-rocket {
+}
+.fa {
+	// display: inline-block;
+	font-size: 14px;
+	line-height: 14px;
+	margin-right: 5px;
+}
+.nav__menu{
+	& ul{
+		margin: 0;
+		padding: 0;
+
+		& li{
+			display: inline-block;
+			list-style-type: none;
+			margin: 0;
+			padding: 0 4px;
+
+			& a{				
+				color: #7D7D7D;
+				text-decoration: none;
+
+				&:hover{
+					color: #9050CA;					
+				}
+			}
+		}
+	}
+	&--main{
+		margin: 2px 0;
+		margin-right: 10px;
+		& ul li a{
+			border-radius: 20px;
+			padding: 15px 19px;
+			&:hover{
+				background: #333439;
+			}
+		}
+	}
+	&--user{
+		& ul li{
+			margin-right: 15px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}
+.nav__shop-button{
+	& a{
+		background: #9050CA;
+		color: #fff !important;
+		&:hover{
+			background: #9050CA !important;
+			color: #fff;
+		}
+	}
+}
+.nav__logo {
+	margin-left: 10px;
+	height: 48px;
+	width: 48px;
+}
+#form-search{
+	position: relative;
+	&:after{
+		content: "\f002";
+		position: absolute;
+		top: 14px;
+		left: 15px;
+		font-size: 14px;
+		line-height: 14px;
+		font-family: FontAwesome;
+		color: #7D7D7D;
+	}
+	& input{
+		outline: none;
+		width: 0px;
+		background: none;
+		border-radius: 20px;
+		margin: 4px 0;
+		padding: 11px 10px;
+		padding-left: 40px;
+		border: none;
+		transition: all 0.4s ease-in-out;
+		.text-header;
+	}
+	& input[type=search]:hover {
+	    background: #333439;
+	    cursor: pointer;
+	}
+	& input[type=search]:focus{
+		padding: 11px;
+		padding-left: 40px;
+	    width: 150px;
+	    background: #333439;
+	}
+		&:active{
+	}
+}
