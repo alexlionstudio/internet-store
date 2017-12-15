@@ -12,18 +12,18 @@
     <meta name="description" content="Описание страницы...">
 
     <!-- FavIcons -->
-    <link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <!-- <link rel="shortcut icon" href="img/favicons/favicon-48x48.ico"  type="image/x-icon" /> -->
+    <!-- <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> -->
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 
     <!-- Owlcarousel -->
-    <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css"> -->
     <!-- <link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.min.css"> -->
 
      <!-- fancyBox -->
-    <link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css"> -->
 
     <!-- User Css -->
     <link rel="stylesheet" href="css/main.css">
@@ -47,15 +47,15 @@
     <!-- header start -->
     <header class="header">
             <div class="container">
-                <nav class="nav">
-                    <!-- top nav-header start -->
-                    <div class="row nav__topbar">
-                        <div class="col-sm-6 visible-lg nav__h-left">
+                <div class="header">
+                    <!-- top header-header start -->
+                    <div class="row header__topbar">
+                        <div class="col-sm-6 visible-lg header__h-left">
                             <span><i class="fa-rocket fa"></i>2017 Blue Spruce Lane Laurel 201712</span>  
                             <span><i class="fa-envelope fa"></i><a href="mailto:name@infosite.com">name@infosite.com</a></span>
                             <span><i class="fa-phone fa"></i>+78 304505544x</tspan>
                         </div>
-                        <div class="col-md-12 col-lg-6  nav__h-right nav__menu nav__menu--user">
+                        <div class="col-md-12 col-lg-6  header__h-right header__menu nav__menu--user">
                             <ul>
                                 <li><a href="#"><i class="fa-user fa"></i>Login</a></li>
                                 <li><a href="#"><i class="fa-globe fa"></i>Language</a></li>
@@ -65,29 +65,31 @@
                     </div>
                     <!-- top nav-header start end-->
                     <!-- bottom nav-header start -->
-                    <div class="row nav__bottombar clearfix">
-                        <div class="nav__logo  float-left">
-                            <img src="img/logo.png" alt="">
+                    <div class="row header__bottombar clearfix">
+                        <div class="header__logo  float-left">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
-                        <div class="nav__menu nav__menu--main float-right">
-                            <ul>
+                        <nav class="navigation float-right">
+                            <div id="navigation-toggle" class="navigation__mobile-icon">
+                            </div>
+                            <ul id="navigation-menu" class="navigation-menu">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Pages</a></li>
                                 <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">Elements</a></li>
                                 <li><a href="#">Features</a></li>
                                 <li><a href="#">Blog</a></li>
-                                <li class="nav__shop-button"><a href="#">Shop</a></li>
+                                <li class="navigation__shop-button"><a href="#">Shop</a></li>
                                 <li>
-                                    <form id="form-search">
+                                    <form id="form-search" class="navigation__form">
                                         <input type="search" placeholder="Search" value="">
                                     </form>
                                 </li>
                             </ul>
-                        </div>                      
+                        </nav>                      
                     </div>
-                    <!-- bottom nav-header end -->
-                </nav>
+                    <!-- bottom header-header end -->
+                </div>
             </div>
     </header>
     <!-- header end -->
@@ -99,25 +101,25 @@
     <!-- cover end -->
 
 	<!--  JQuery -->
-	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
 
 	<!--  Pagescroll2id -->
-	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<!-- <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script> -->
 
 	<!--  mixitup -->
-	<script src="libs/mixitup-v3/dist/mixitup.min.js"></script>
+	<!-- <script src="libs/mixitup-v3/dist/mixitup.min.js"></script> -->
 
 	<!--  fancyBox -->
-	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<!-- <script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script> -->
 
 	<!--  JQuery mouseWheel -->
-	<script src="libs/jquery-mousewheel/jquery.mousewheel-3.0.6.pack.js"></script>
+	<!-- <script src="libs/jquery-mousewheel/jquery.mousewheel-3.0.6.pack.js"></script> -->
 
 	<!--  JQuery Validate -->
-	<script src="libs/jquery.validate/jquery.validate.js"></script>
+	<!-- <script src="libs/jquery.validate/jquery.validate.js"></script> -->
 
 	<!--  EqualHeight -->
-	<script src="libs/equalHeight/equalHeight.js"></script>
+	<!-- <script src="libs/equalHeight/equalHeight.js"></script> -->
 
 	<!--  User custom JS scripts -->
 	<script src="js/main.js"></script>

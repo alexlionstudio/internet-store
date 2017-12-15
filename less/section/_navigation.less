@@ -1,0 +1,139 @@
+.navigation{
+	position: relative;
+	margin: 2px 0;
+	margin-right: 10px;
+}
+
+.navigation__mobile-icon{
+	margin-right: 10px;
+	padding: 15px;
+	background: #4D4D4E;
+	border-radius: 5px;
+	cursor: pointer;
+	&:hover{
+		background: #333439;
+	}
+	&:after{
+		content: "";
+		display: block;
+		background-image: url("../icons/navigation.svg");
+		background-repeat: no-repeat;
+		width: 20px;
+		height: 14px;
+	}
+	@media (min-width: 992px) {
+		display: none;		
+	}
+}
+
+.navigation-menu {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	& li {
+		margin: 0;
+		padding: 0;
+		display: block;
+		list-style-type: none;
+		& a {
+			display: inline-block;
+			width: 200px;
+			padding: 5px 15px;
+			background: #4D4D4E;
+			color: #7D7D7D;
+			text-decoration: none;
+			border-bottom: solid 1px #6F6F6F;
+			&:hover{
+				color: #9050CA;
+				background: #333439;				
+			}
+		}
+	}
+
+	margin: 0;
+	padding: 0;
+	@media (min-width: 992px) {
+		position: relative;
+		right: 0px;
+		top: 0px;
+		display: block;
+		& li{
+			display: inline-block;
+			margin: 0;
+			padding: 0 4px;
+
+			& a{
+				background: none;
+				width: auto;
+				border-radius: 20px;
+				padding: 0px 15px;
+				border-bottom: none;
+
+				&:hover{
+					color: #9050CA;
+					background: #333439;				
+				}
+			}
+		}		
+	}
+}
+
+//  класс для включения меню на мобильных устройствах
+.navigation-menu--mobile-menu{
+	display: block;
+}
+
+.navigation__shop-button{
+	@media (min-width: 992px) {
+		& a{
+			background: #9050CA !important;
+			color: #fff !important;
+			&:hover{
+				background: #AD6CE7 !important;
+				color: #fff;
+			}
+		}	
+	}
+}
+
+//  form search 
+.navigation__form{
+	display: none;	
+	position: relative;
+	&:after{
+		content: "\f002";
+		position: absolute;
+		top: 14px;
+		left: 15px;
+		font-size: 14px;
+		line-height: 14px;
+		font-family: FontAwesome;
+		color: #7D7D7D;
+	}
+	& input{
+		outline: none;
+		width: 0px;
+		background: none;
+		border-radius: 20px;
+		margin: 4px 0;
+		padding: 11px 10px;
+		padding-left: 40px;
+		border: none;
+		transition: all 0.4s ease-in-out;
+		.text-header;
+	}
+	& input[type=search]:hover {
+	    background: #333439; 
+	    cursor: pointer;
+	}
+	& input[type=search]:focus {
+		padding: 11px;
+		padding-left: 40px;
+	    width: 150px;
+	    background: #333439;
+	}
+	@media (min-width: 992px) {
+		display: inline-block;	
+	}
+}
