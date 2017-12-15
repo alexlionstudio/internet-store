@@ -48,4 +48,8 @@ $(document).ready(function() {
 	$('.navigation-menu a').on("click", function(){
 		fnstart();
 	});
+	// То же самое происходит когда человек сразу хочет вернуться на домашнию страницу
+	$('#top-logo a').on("click", function(){
+		fnstart();
+	});
 });
