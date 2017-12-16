@@ -5,15 +5,20 @@
 // section
 @import url("section/_header.less");
 @import url("section/_navigation.less");
+@import url("section/_cover.less");
+@import url("section/_benefits.less");
 
 
 /* Box-sizing-model */
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
+     -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
+}
+img{
+	width: 100%;
 }
 
 .float-left{
@@ -27,4 +32,18 @@
 		content: "";
 		display: block;
 	}
+}
+
+.wrapper{
+	background-image: url("../img/bg_1.jpg");
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.content{
+	background: #fff;
+}
+
+// Change-bootstrap
+.container--no-padding{
+	padding: 0;
 }

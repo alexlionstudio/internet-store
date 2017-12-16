@@ -36,7 +36,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body class="wrapper">
 
 	<!-- [if lt IE 8]>
 	    <p class="browserupgrade">Вы используете <strong>устаревшую</strong> версию браузера. Пожалуйста <a href="http://browsehappy.com/">обновите свой браузер</a>.</p>
@@ -47,60 +47,106 @@
     <!-- header start -->
     <header class="header">
             <div class="container">
-                <div class="header">
-                    <!-- top header-header start -->
-                    <div class="row header__topbar">
-                        <div class="col-sm-6 visible-lg header__h-left">
-                            <span><i class="fa-rocket fa"></i>2017 Blue Spruce Lane Laurel 201712</span>  
-                            <span><i class="fa-envelope fa"></i><a href="mailto:name@infosite.com">name@infosite.com</a></span>
-                            <span><i class="fa-phone fa"></i>+78 304505544x</tspan>
-                        </div>
-                        <div class="col-md-12 col-lg-6  header__h-right header__menu nav__menu--user">
-                            <ul>
-                                <li><a href="#"><i class="fa-user fa"></i>Login</a></li>
-                                <li><a href="#"><i class="fa-globe fa"></i>Language</a></li>
-                                <li><a href="#"><i class="fa-shopping-cart fa"></i>$0.00</a></li>
-                            </ul> 
-                        </div>
+                <!-- top header-header start -->
+                <div class="row header__topbar">
+                    <div class="col-sm-6 visible-lg header__h-left">
+                        <span><i class="fa-rocket fa"></i>2017 Blue Spruce Lane Laurel 201712</span>  
+                        <span><i class="fa-envelope fa"></i><a href="mailto:name@infosite.com">name@infosite.com</a></span>
+                        <span><i class="fa-phone fa"></i>+78 304505544x</span>
                     </div>
-                    <!-- top nav-header start end-->
-                    <!-- bottom nav-header start -->
-                    <div class="row header__bottombar clearfix">
-                        <div id="top-logo" class="header__logo  float-left">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                        <nav class="navigation float-right">
-                            <div id="navigation-toggle" class="navigation__mobile-icon">
-                            </div>
-                            <ul id="navigation-menu" class="navigation-menu">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Pages</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Elements</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li class="navigation__shop-button"><a href="#">Shop</a></li>
-                                <li>
-                                    <form id="form-search" class="navigation__form">
-                                        <input type="search" placeholder="Search" value="">
-                                    </form>
-                                </li>
-                            </ul>
-                        </nav>                      
+                    <div class="col-md-12 col-lg-6  header__h-right header__menu nav__menu--user">
+                        <ul>
+                            <li><a href="#"><i class="fa-user fa"></i>Login</a></li>
+                            <li><a href="#"><i class="fa-globe fa"></i>Language</a></li>
+                            <li><a href="#"><i class="fa-shopping-cart fa"></i>$0.00</a></li>
+                        </ul> 
                     </div>
-                    <!-- bottom header-header end -->
                 </div>
+                <!-- top nav-header start end-->
+                <!-- bottom nav-header start -->
+                <div class="row header__bottombar clearfix">
+                    <div id="top-logo" class="header__logo  float-left">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <nav class="navigation float-right">
+                        <div id="navigation-toggle" class="navigation__mobile-icon">
+                        </div>
+                        <ul id="navigation-menu" class="navigation-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Elements</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li class="navigation__shop-button"><a href="#">Shop</a></li>
+                            <li>
+                                <form id="form-search" class="navigation__form">
+                                    <input type="search" placeholder="Search" value="">
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>                      
+                </div>
+                <!-- bottom header-header end -->
             </div>
     </header>
     <!-- header end -->
-    <!-- cover start -->
-    <section>
-        <div class="container">            
-        </div>
-    </section>
-    <!-- cover end -->
-
-	<!--  JQuery -->
+    <!-- content start -->
+    <main class="container container--no-padding content">
+        <!-- cover start -->
+        <section class="row cover">
+            <div class="col-sm-8 cover__big-image">
+                <img src="img/carusel_1.jpg" alt="image">
+                <!-- <img src="img/carusel_2.jpg" alt="image"> -->
+                <!-- <img src="img/carusel_3.jpg" alt="image"> -->
+            </div>
+            <div class="col-sm-4 cover__small-images">
+                <div class="cover__small-images-box">
+                    <img src="img/man_clothes.jpg" alt="image">
+                </div>
+                <div class="cover__small-images-box">
+                    <img src="img/women_clothes.jpg" alt="image">
+                </div>
+            </div>
+        </section>
+        <!-- cover end -->
+        <!-- benefits start -->
+        <section class="benefits">
+            <!-- line-shadow start -->
+            <div class="row benefits__line-shadow">
+            </div>
+            <!-- line-shadow end -->
+            <div class="row benefits__container">
+                <!-- Triger and text 1 -->
+                <div class="col-sm-6 col-md-3 co-lg-3 benefits__box">
+                        <h2 class="benefits__subtitle"><i class="fa-truck fa"></i>Free shipping</h2>
+                        <p class="benefits__text">Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus</p>
+                </div>
+                <!-- Triger and text 2 -->
+                <div class="col-sm-6 col-md-3 co-lg-3 benefits__box">
+                        <h2 class="benefits__subtitle"><i class="fa-money fa"></i>EASY PAYMENT</h2>
+                        <p class="benefits__text">Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus</p>
+                </div>
+                <!-- Triger and text 3 -->
+                <div class="col-sm-6 col-md-3 co-lg-3 benefits__box">
+                        <h2 class="benefits__subtitle"><i class="fa-clock-o fa"></i>24H SHIPPING</h2>
+                        <p class="benefits__text">Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus</p>
+                </div>
+                <!-- Triger and text 4 -->
+                <div class="col-sm-6 col-md-3 co-lg-3 benefits__box">
+                        <h2 class="benefits__subtitle"><i class="fa-thumbs-up fa"></i>100% GUARANTEE</h2>
+                        <p class="benefits__text">Duis sit amet orci et lectus dictum auctor a nec enim. Donec suscipit fringilla elementum.. Vestibulum hendrerit diam nunc, in tempus urna rhoncus faucibus</p>
+                </div>
+                <!-- END of Last Triger and text -->
+            </div>
+            <!-- line-shadow start -->
+            <div class="row benefits__line-shadow">
+            </div>
+            <!-- line-shadow end -->
+        </section>
+        <!-- benefits end -->
+    </main>
+    <!-- content end -->
 	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
 
 	<!--  Pagescroll2id -->

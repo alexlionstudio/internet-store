@@ -234,6 +234,101 @@
     display: inline-block;
   }
 }
+.cover {
+  margin: 40px 0px 48px;
+}
+@media (min-width: 768px) {
+  .cover {
+    margin: 60px 0px 48px;
+  }
+}
+.cover__big-image {
+  overflow: hidden;
+  max-height: 434px;
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .cover__big-image {
+    margin-bottom: 0px;
+  }
+}
+.cover__small-images {
+  display: flex;
+  flex-direction: column;
+}
+.cover__small-images-box {
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .cover__small-images-box {
+    max-height: 208px;
+  }
+}
+@media (min-width: 992px) {
+  .cover__small-images-box {
+    max-height: 208px;
+  }
+}
+@media (min-width: 1200px) {
+  .cover__small-images-box {
+    margin-bottom: 18px;
+    max-height: 208px;
+  }
+}
+.cover__small-images-box:last-child {
+  margin-bottom: 0;
+}
+.benefits {
+  margin-top: 26px;
+  margin-bottom: 33px;
+}
+.benefits__line-shadow {
+  margin: 18px 0px;
+  padding: 0 15px;
+  height: 10px;
+  background-image: url("../img/line-shadow.png");
+  background-position: center  top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.benefits__container {
+  margin: 0 0;
+  padding: 30px 0;
+}
+.benefits__box {
+  margin-bottom: 30px;
+}
+.benefits__box:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .benefits__box {
+    margin: 0;
+  }
+}
+.benefits__subtitle {
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+.benefits__subtitle .fa {
+  font-size: 26px;
+}
+.benefits__text {
+  padding: 0;
+  margin: 0 0 11px;
+  font-size: 13px;
+  line-height: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
 /* Box-sizing-model */
 *,
 *:before,
@@ -241,6 +336,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+img {
+  width: 100%;
 }
 .float-left {
   float: left;
@@ -251,5 +349,16 @@
 .clearfix:after {
   content: "";
   display: block;
+}
+.wrapper {
+  background-image: url("../img/bg_1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.content {
+  background: #fff;
+}
+.container--no-padding {
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
