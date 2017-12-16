@@ -46,7 +46,7 @@
 			text-decoration: none;
 			border-bottom: solid 1px #6F6F6F;
 			&:hover{
-				color: #9050CA;
+				color: @active-color;
 				background: #333439;				
 			}
 		}
@@ -72,7 +72,7 @@
 				border-bottom: none;
 
 				&:hover{
-					color: #9050CA;
+					color: @active-color;
 					background: #333439;				
 				}
 			}
@@ -88,10 +88,10 @@
 .navigation__shop-button{
 	@media (min-width: 992px) {
 		& a{
-			background: #9050CA !important;
+			background: @active-color !important;
 			color: #fff !important;
 			&:hover{
-				background: #AD6CE7 !important;
+				background: @active-color-hover !important;
 				color: #fff;
 			}
 		}	
