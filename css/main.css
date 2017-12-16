@@ -529,16 +529,17 @@
 .owl-theme-story .owl-nav {
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 45%;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .owl-theme-story .owl-nav {
-    top: 45%;
+    top: 50%;
   }
 }
 .owl-theme-story .owl-nav .owl-prev {
+  top: -25px;
   position: absolute;
-  left: -20px;
+  left: 0px;
   opacity: 0.0;
   transition: all linear 0.1s;
 }
@@ -548,8 +549,9 @@
   font-size: 22px;
 }
 .owl-theme-story .owl-nav .owl-next {
+  top: -25px;
   position: absolute;
-  right: 10px;
+  right: 0px;
   opacity: 0.0;
   transition: all ease-out 0.5s;
 }
@@ -559,7 +561,7 @@
   font-size: 22px;
 }
 .owl-theme-story .owl-nav .owl-next-animate {
-  right: 40px;
+  right: 10px;
   opacity: 0.7;
 }
 .owl-theme-story .owl-nav .owl-prev-animate {
@@ -572,7 +574,7 @@
   margin: 5px;
   padding: 10px 22px;
   background: #000;
-  display: inline-block;
+  display: block;
   cursor: pointer;
   border-radius: 3px;
 }
@@ -586,9 +588,6 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-body {
-  overflow-x: hidden;
 }
 img {
   width: 100%;

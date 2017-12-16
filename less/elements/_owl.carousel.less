@@ -185,24 +185,26 @@
 .owl-theme-story .owl-nav {
   position: absolute;
   width: 100%; 
-  top: 40%;
-   @media (min-width: 992px){
-       top: 45%;
-   }
-  .owl-prev{
-    position: absolute;
-    left: -20px;
-    opacity: 0.0;
-    transition: all linear 0.1s; 
-    &:before{
-      content: "\f104";
-      font-family: FontAwesome;
-      font-size: 22px;
-    }
-  }
-.owl-next{
+  top: 45%;
+  @media (min-width: 768px) {
+    top: 50%;  
+  }  
+.owl-prev{
+  top: -25px;
   position: absolute;
-  right: 10px;
+  left: 0px;
+  opacity: 0.0;
+  transition: all linear 0.1s; 
+  &:before{
+    content: "\f104";
+    font-family: FontAwesome;
+    font-size: 22px;
+  }
+}
+.owl-next{
+  top: -25px;
+  position: absolute;
+  right: 0px;
   opacity: 0.0;
   transition: all ease-out 0.5s;
   &:before{
@@ -213,7 +215,7 @@
 }    
 
  .owl-next-animate{
-    right: 40px;
+    right: 10px;
     opacity: 0.7;
  }
  .owl-prev-animate{
@@ -230,7 +232,7 @@
   margin: 5px;
   padding: 10px 22px;
   background: #000;
-  display: inline-block;
+  display: block;
   cursor: pointer;
   border-radius: 3px;
   &:hover{
