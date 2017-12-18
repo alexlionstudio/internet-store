@@ -1,0 +1,40 @@
+.filter{
+	display: flex; // flex properties
+	flex-direction: column; // flex properties
+	justify-content: center; // flex properties
+	margin-bottom: 60px;
+	@media (min-width:768px) {
+		flex-direction: row; // flex properties
+	}
+}
+a.filter__toggle{
+	align-self:center; // flex properties
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	padding: 0 20px;
+	color: #000;
+	.roboto-light;
+	margin: 10px 0;
+	@media (min-width:768px) {
+		margin: 0;
+	}
+	&:after{			
+		transition: font-size, color, ease-out 0.25s;
+		content: "\f04d";
+		color: @active-color-hover;
+		font-family: FontAwesome;
+		position: absolute;
+		font-size: 0px;
+		top: -10px;
+		right: 5px;
+	}
+	&:hover{
+		color: @active-color-hover;
+		&:after{			
+			font-size: 12px;
+		}
+	}
+} 
