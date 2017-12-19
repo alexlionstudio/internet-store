@@ -63,13 +63,12 @@
   animation: showTheNav 0.5s ease-in-out;
 }
 .header__bar--hide {
-  animation: hideTheNav 0.5s ease-in-out;
+  animation: hideTheNavMobile 0.5s ease-in-out;
 }
-.header__bar {
-  transition: transform ease-in-out 0.7s;
-  -moz-transition: transform ease-in-out 0.7s;
-  -ms-transition: transform ease-in-out 0.7s;
-  -webkit-transition: transform ease-in-out 0.7s;
+@media (min-width: 768px) {
+  .header__bar--hide {
+    animation: hideTheNav 0.5s ease-in-out;
+  }
 }
 .header__bottombar_background {
   margin: 0;
@@ -138,6 +137,14 @@
 @keyframes hideTheNav {
   from {
     margin-top: 140px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+@keyframes hideTheNavMobile {
+  from {
+    margin-top: 100px;
   }
   to {
     margin-top: 0px;
