@@ -18,6 +18,7 @@ a.filter__toggle{
 	color: #000;
 	.roboto-light;
 	margin: 10px 0;
+	cursor: pointer;
 	@media (min-width:768px) {
 		margin: 0;
 	}
@@ -38,3 +39,10 @@ a.filter__toggle{
 		}
 	}
 } 
+//  класс который добовляет mixitup
+a.mixitup-control-active{
+	color: @active-color-hover;
+	&:after{			
+		font-size: 12px;
+	}
+}

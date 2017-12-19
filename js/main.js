@@ -18,4 +18,22 @@ $(document).ready(function() {
 		$('.owl-prev').removeClass('owl-prev-animate');
 	});
 	
+	//  mixitup
+	var mixer = mixitup('#product-catalog');
+
+	// fancybox
+    $(".fancybox").fancybox({
+			// Default - with fix from scroll to top
+			protect: true,
+			infobar : true,
+			toolbar : true,
+			buttons : [
+		        // 'slideShow',
+		        // 'fullScreen',
+		        // 'thumbs',
+		        //'download',
+		        //'zoom',
+		        'close'
+		    ],
+    });
 });

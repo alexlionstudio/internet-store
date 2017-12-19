@@ -482,6 +482,7 @@ a.filter__toggle {
   font-style: normal;
   font-weight: 300;
   margin: 10px 0;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   a.filter__toggle {
@@ -502,6 +503,12 @@ a.filter__toggle:hover {
   color: #ad6ce7;
 }
 a.filter__toggle:hover:after {
+  font-size: 12px;
+}
+a.mixitup-control-active {
+  color: #ad6ce7;
+}
+a.mixitup-control-active:after {
   font-size: 12px;
 }
 .store {
@@ -561,6 +568,7 @@ a.store__hover-button {
   text-transform: uppercase;
   color: #fff;
   opacity: 0.9;
+  cursor: pointer;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

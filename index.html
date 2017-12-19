@@ -22,7 +22,7 @@
     <!-- <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css"> -->
 
      <!-- fancyBox -->
-    <!-- <link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css"> -->
+    <link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css">
 
     <!-- User Css -->
     <link rel="stylesheet" href="css/main.css">
@@ -190,25 +190,25 @@
         <!-- store start -->
         <section class="store">
             <!-- filter start -->
-            <div class="filter">
-                <a href="#" class="filter__toggle">Featured</a>
-                <a href="#" class="filter__toggle">Best sellers</a>
-                <a href="#" class="filter__toggle">New arrivals</a>
-                <a href="#" class="filter__toggle">Sale</a>
+            <div class="controls filter">
+                <a class="filter__toggle" data-filter="all">Featured</a>
+                <a class="filter__toggle" data-filter=".product-best">Best sellers</a>
+                <a class="filter__toggle" data-filter=".product-new">New arrivals</a>
+                <a class="filter__toggle" data-filter=".product-sale">Sale</a>
             </div>
             <!-- filter end -->
             <!-- store__container start -->
             <div class="store__container">
-                <div class="row row--no-margin">
+                <div class="row row--no-margin" id="product-catalog">
                     <!-- card product 1 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-best product-sale">
                         <div class="store__card-box">
                             <div class="store__image-box">
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/8.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/8.jpg" alt="product-image">
@@ -218,14 +218,14 @@
                         </div>
                     </div>
                     <!-- card product 2 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-best">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/7.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/7.jpg" alt="product-image">
@@ -235,14 +235,14 @@
                         </div>
                     </div>
                     <!-- card product 3 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-sale">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/6.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/6.jpg" alt="product-image">
@@ -252,14 +252,14 @@
                         </div>
                     </div>
                     <!-- card product 4 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-new">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/5.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/5.jpg" alt="product-image">
@@ -269,14 +269,14 @@
                         </div>
                     </div>
                     <!-- card product 5 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-best product-sale">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/4.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/4.jpg" alt="product-image">
@@ -286,14 +286,14 @@
                         </div>
                     </div>
                     <!-- card product 6 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-best">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/3.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/3.jpg" alt="product-image">
@@ -303,14 +303,14 @@
                         </div>
                     </div>
                     <!-- card product 7 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-new product-sale">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/2.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/2.jpg" alt="product-image">
@@ -320,14 +320,14 @@
                         </div>
                     </div>
                     <!-- card product 8 -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="col-xs-6 col-sm-4 col-md-3 mix product-new">
                         <div class="store__card-box">
                             <div class="store__image-box" >
                                 <div class="store__hover-box">
                                     <div class="store__hover-layer">
-                                        <a href="#" class="store__hover-button">View large</a>
-                                        <a href="#" class="store__hover-button">Show info</a>
-                                        <a href="#" class="store__hover-button store__hover-button--green">Add to cart</a>
+                                        <a href="img/1.jpg" data-caption="Excellent clothe!" class="fancybox store__hover-button">View large</a>
+                                        <a class="store__hover-button">Show info</a>
+                                        <a class="store__hover-button store__hover-button--green">Add to cart</a>
                                     </div>
                                 </div>
                                 <img class="store__image" src="img/1.jpg" alt="product-image">
@@ -353,11 +353,11 @@
     <!--  Pagescroll2id -->
 	<!-- <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script> -->
 
-	<!--  mixitup -->
-	<!-- <script src="libs/mixitup-v3/dist/mixitup.min.js"></script> -->
+	<!--  mixitup - для фильтра-->
+	<script src="libs/mixitup-v3/dist/mixitup.min.js"></script>
 
 	<!--  fancyBox -->
-	<!-- <script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script> -->
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
 
 	<!--  JQuery mouseWheel -->
 	<!-- <script src="libs/jquery-mousewheel/jquery.mousewheel-3.0.6.pack.js"></script> -->
