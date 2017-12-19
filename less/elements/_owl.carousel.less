@@ -188,7 +188,7 @@
   top: 45%;
   @media (min-width: 768px) {
     top: 50%;  
-  }  
+  }
 .owl-prev{
   top: -25px;
   position: absolute;
@@ -239,3 +239,101 @@
     background: @active-color;
   }
 }
+
+// ---------------------------------------------
+//                .owl-theme-rewiews
+// ---------------------------------------------
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ *  Default theme - Owl Carousel CSS File
+ */
+.owl-theme-rewiews .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  @media (min-width: 768px) {
+    top: 50%;  
+  }
+.owl-prev{
+  top: -25px;
+  position: absolute;
+  left: 0px;
+  opacity: 0.0;
+  transition: all linear 0.1s; 
+  &:before{
+    content: "\f104";
+    font-family: FontAwesome;
+    font-size: 22px;
+  }
+}
+.owl-next{
+  top: -25px;
+  position: absolute;
+  right: 0px;
+  opacity: 0.0;
+  transition: all ease-out 0.5s;
+  &:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 22px;
+  }
+}
+   .owl-next-animate{
+      right: 10px;
+      opacity: 0.7;
+}
+   .owl-prev-animate{
+      left: 10px;
+      opacity: 0.7;
+   }
+  // text-align: center;
+  // -webkit-tap-highlight-color: transparent;
+ }
+.owl-theme-rewiews .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 10px 22px;
+  background: #000;
+  display: block;
+  cursor: pointer;
+  border-radius: 3px;
+  &:hover{
+    background: @active-color;
+  }
+}
+.owl-dots{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  @media (min-width:992px) {
+      bottom: 30px;
+  }
+  @media (min-width:992px) {
+      bottom: 40px;
+  }
+}
+.owl-theme-rewiews .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme-rewiews .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme-rewiews .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme-rewiews .owl-dots .owl-dot.active span, .owl-theme-rewiews .owl-dots .owl-dot:hover span {
+      background: @active-color-hover; }

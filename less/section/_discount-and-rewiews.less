@@ -1,0 +1,113 @@
+.discount-rewiews {
+}
+
+//  ---------------------------
+//            discount
+//  ---------------------------
+
+.discount {
+	background-image: url("../img/bg_4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex; // flex  properties
+	align-items: center;  // flex  properties
+	justify-content: center; // flex  properties
+	height: 200px;
+	@media (min-width:768px) {
+		height: 370px;
+	}
+}
+a.discount__button {
+	text-decoration: none;
+	padding: 18px 40px;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background: @active-color;
+	.roboto-regular;
+	display: inline-block;
+	cursor: pointer;
+	&:hover{
+		background: @active-color-hover;
+	}
+	@media (min-width:768px) {
+		font-size: 14px;
+	}
+}
+
+//  ---------------------------
+//            rewiews
+//  ---------------------------
+
+
+.rewiews {
+	position: relative;
+	background-image: url("../img/bg_2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 370px;
+	display: block;
+	overflow: hidden;
+}
+.rewiews__block {
+}
+.rewiews__contents {
+	padding: 10% 20%;
+	margin-bottom: 40px;
+}
+.rewiews__avatar-block {
+	margin: 0 auto 20px;
+	height: 90px;
+	width: 90px;
+	border: 2px solid #fff;
+	padding: 5px;
+	border-radius: 50%;
+}
+.rewiews__avatar-image{	
+	overflow: hidden;
+	border-radius: 50%;
+	img{
+		width: 100%;
+	}
+}
+.rewiews__text {
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 20px;
+	.roboto-light;
+}
+.rewiews__name-box {
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-align: center;
+	@media (min-width:992px) {
+		font-size: 15px;
+	}
+}
+.rewiews__name {
+	color: #DB484B;
+	.roboto-black;
+	&:before, &:after{
+		color: #fff;
+		content: "-";
+		padding-right: 3px;
+		padding-left: 3px;
+	}
+}
+.rewiews__work {
+	color: #777777;
+	.roboto-regular;
+	&:after{
+		color: #fff;
+		content: "-";
+		padding-right: 3px;
+		padding-left: 3px;
+	}
+}
