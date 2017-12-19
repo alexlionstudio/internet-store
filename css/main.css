@@ -53,9 +53,40 @@
 .header__topbar a:hover {
   color: #fff;
 }
+.header__bar--show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #181A1C;
+  z-index: 10;
+  animation: showTheNav 0.5s ease-in-out;
+}
+.header__bar--hide {
+  animation: hideTheNav 0.5s ease-in-out;
+}
+.header__bar {
+  transition: transform ease-in-out 0.7s;
+  -moz-transition: transform ease-in-out 0.7s;
+  -ms-transition: transform ease-in-out 0.7s;
+  -webkit-transition: transform ease-in-out 0.7s;
+}
+.header__bottombar_background {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  height: 65px;
+}
 .header__bottombar {
+  position: absolute;
+  margin: 0;
   padding: 10px 0px;
   background: #181A1C;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 .header__h-left {
   text-align: left;
@@ -95,6 +126,22 @@
   margin-left: 10px;
   height: 48px;
   width: 48px;
+}
+@keyframes showTheNav {
+  from {
+    margin-top: -120px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
+@keyframes hideTheNav {
+  from {
+    margin-top: 140px;
+  }
+  to {
+    margin-top: 0px;
+  }
 }
 .navigation {
   position: relative;
@@ -639,6 +686,13 @@ a.store__link:hover {
   text-align: center;
   font-size: 21px;
   color: #5CB85C;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+}
+.store__price:before {
+  content: "$";
+  margin-right: 5px;
 }
 /**
  * Owl Carousel v2.2.1
@@ -921,6 +975,9 @@ img {
   background: #fff;
 }
 .row--no-margin {
+  padding: 0;
+}
+.container-no-padding {
   padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

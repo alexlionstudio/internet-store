@@ -56,4 +56,30 @@ $(document).ready(function() {
 	$('#top a').on("click", function(){
 		fnstart();
 	});
+
+
+	// ---------------------------------------------------------------------------------------
+	//         Фиксируем меню при прокрутке страницы
+	// ---------------------------------------------------------------------------------------
+	//  используем дополнительные классы и делаем меню в постоянном положение absolute
+	//  затем применяем JS в  создании фиксированного красивой анимайии фиксированного меню.
+	// ---------------------------------------------------------------------------------------
+
+	var elemIdTop = $('#top');
+	jQuery(function() {
+	        $(window).scroll(function(){
+	            if($(this).scrollTop()>140){
+	            	if($('.header__bottombar').hasClass('header__bar--hide')){	           		
+			            $('.header__bottombar').removeClass('header__bar--hide'); 
+	            	};
+	            	$('.header__bar').addClass('header__bar--show');
+	            }
+	            else if ($(this).scrollTop()<140){
+	            	if($('.header__bar').hasClass('header__bar--show')){
+		                $('.header__bar').removeClass('header__bar--show');
+		                $('.header__bottombar').addClass('header__bar--hide');
+		            };
+	            };
+	        });
+	});
 });
