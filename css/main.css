@@ -508,13 +508,97 @@ a.filter__toggle:hover:after {
   margin-top: 80px;
 }
 .store__card-box {
-  padding: 20px;
+  padding: 0px;
 }
 .store__image-box {
-  background: #fff;
+  position: relative;
 }
-.store__image:hover {
-  opacity: 0.4;
+.store__image-box:hover .store__hover-box {
+  display: block;
+  top: 0;
+  height: 100%;
+}
+.store__image-box:hover a.store__hover-button {
+  transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+}
+.store__hover-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all ease-in-out 0.6s;
+  -moz-transition: all ease-in-out 0.6s;
+  -ms-transition: all ease-in-out 0.6s;
+  -webkit-transition: all ease-in-out 0.6s;
+}
+.store__hover-layer {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+a.store__hover-button {
+  align-self: center;
+  display: block;
+  text-decoration: none;
+  border-radius: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 70%;
+  background: #2d2d2d;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.9;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  transition: background ease-out 0.25s;
+  -moz-transition: background ease-out 0.25s;
+  -ms-transition: background ease-out 0.25s;
+  -webkit-transition: background ease-out 0.25s;
+  transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transition: transform ease-in-out 0.5s;
+  -moz-transition: transform ease-in-out 0.5s;
+  -ms-transition: transform ease-in-out 0.5s;
+  -webkit-transition: transform ease-in-out 0.5s;
+}
+a.store__hover-button:last-child {
+  margin-bottom: 0;
+}
+a.store__hover-button:hover,
+a.store__hover-button:active,
+a.store__hover-button:focus {
+  background: #ad6ce7;
+}
+a.store__hover-button--green {
+  background: #4BAF45;
+}
+a.store__hover-button:first-child {
+  transition: transform ease-in-out 0.3s;
+  -moz-transition: transform ease-in-out 0.3s;
+  -ms-transition: transform ease-in-out 0.3s;
+  -webkit-transition: transform ease-in-out 0.3s;
+}
+a.store__hover-button:last-child {
+  transition: transform ease-in-out 0.7s;
+  -moz-transition: transform ease-in-out 0.7s;
+  -ms-transition: transform ease-in-out 0.7s;
+  -webkit-transition: transform ease-in-out 0.7s;
 }
 a.store__link {
   margin-top: 20px;
