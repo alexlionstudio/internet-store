@@ -29,10 +29,10 @@
 	height: 0%;
 	top: 50%;
 	background: rgba(255,255,255,0.8);
-	transition: all ease-in-out 0.6s;
-		-moz-transition: all ease-in-out 0.6s;
-		-ms-transition: all ease-in-out 0.6s;
-		-webkit-transition: all ease-in-out 0.6s;
+	transition: all ease-in-out 0.5s;
+		-moz-transition: all ease-in-out 0.5s;
+		-ms-transition: all ease-in-out 0.5s;
+		-webkit-transition: all ease-in-out 0.5s;
 }
 .store__hover-layer{	
 	position: absolute;
@@ -47,24 +47,31 @@ a.store__hover-button{
 	display: block;
 	text-decoration: none;
 	border-radius: 22px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	width: 70%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80%;
 	background: #2d2d2d;
 	margin-bottom: 10px;
 	text-align: center;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 14px;
 	text-transform: uppercase;
 	color: #fff;
 	opacity: 0.9;
-	.roboto-black;
+	.roboto-regular;
 	transition: background ease-out 0.25s;
 		-moz-transition: background ease-out 0.25s;
 		-ms-transition: background ease-out 0.25s;
 		-webkit-transition: background ease-out 0.25s;
 	&:last-child{
 	    margin-bottom: 0;
+	}
+	@media (min-width:768px) {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		width: 70%;
+		font-size: 14px;		
+	    .roboto-black;
 	}
 	&:hover, &:active, &:focus{
 		background: @active-color-hover; 
@@ -114,80 +121,3 @@ a.store__link{
 	font-size: 21px;
 	color: #5CB85C;
 }
-
-
-// ----------------------------------
-// ---------------Flex-----------
-// ----------------------------------
-// .store__image-box{
-// 	position: relative;
-// 	&:hover .store__hover-box{
-// 		display: block;
-// 		top: 0;
-// 		height: 100%;
-// 	}
-// 	&:hover .store__hover-layer {
-// 		display: flex; // flex properties
-// 		width: 100%;
-// 		transform:scale(1,1);
-// 			-moz-transform:scale(1,1);
-// 			-ms-transform:scale(1,1);
-// 			-webkit-transform:scale(1,1);
-// 	}
-// }
-// .store__hover-box {
-// 	position: absolute;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	height: 0%;
-// 	top: 50%;
-// 	background: rgba(255,255,255,0.8);
-// 	transition: all ease-in-out 0.5s;
-// 		-moz-transition: all ease-in-out 0.5s;
-// 		-ms-transition: all ease-in-out 0.5s;
-// 		-webkit-transition: all ease-in-out 0.5s;
-// }
-// .store__hover-layer{
-// 	flex-direction: column; // flex properties
-// 	justify-content: center; // flex properties
-// 	display: none; // в hover включаем display: flex; // flex properties
-// 	height: 100%;
-// 	transform:scale(0,0);
-// 		-moz-transform:scale(0,0);
-// 		-ms-transform:scale(0,0);
-// 		-webkit-transform:scale(0,0);
-// 	transition: all ease-in-out 0.5s;
-// 		-moz-transition: all ease-in-out 0.5s;
-// 		-ms-transition: all ease-in-out 0.5s;
-// 		-webkit-transition: all ease-in-out 0.5s;
-// }
-// a.store__hover-button{
-// 	align-self:center; // flex properties
-// 	display: block;
-// 	text-decoration: none;
-// 	border-radius: 22px;
-// 	padding: 15px 0;
-// 	background: #2d2d2d;
-// 	width: 70%;
-// 	margin-bottom: 10px;
-// 	text-align: center;
-// 	font-size: 14px;
-// 	line-height: 14px;
-// 	text-transform: uppercase;
-// 	color: #fff;
-// 	.roboto-black;
-// 	transition: background ease-out 0.25s;
-// 		-moz-transition: background ease-out 0.25s;
-// 		-ms-transition: background ease-out 0.25s;
-// 		-webkit-transition: background ease-out 0.25s;
-// 	&:last-child{
-// 	    margin-bottom: 0;
-// 	}
-// 	&:hover, &:active, &:focus{
-// 		background: @active-color-hover; 
-// 	}
-// 	&--green{
-// 		background: #4BAF45; 
-// 	}	
-// }
