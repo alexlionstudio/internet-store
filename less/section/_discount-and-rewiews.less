@@ -13,10 +13,10 @@
 	display: flex; // flex  properties
 	align-items: center;  // flex  properties
 	justify-content: center; // flex  properties
-	height: 200px;
-	@media (min-width:768px) {
-		height: 370px;
+	height: 200px;@media (min-width:768px) {
+		height: 380px;
 	}
+	
 }
 a.discount__button {
 	text-decoration: none;
@@ -50,15 +50,17 @@ a.discount__button {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 370px;
+	height: 380px;
 	display: block;
 	overflow: hidden;
 }
-.rewiews__block {
+.rewiews__block {	
+	height: 100%;
 }
 .rewiews__contents {
-	padding: 10% 20%;
-	margin-bottom: 40px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 14%;
 }
 .rewiews__avatar-block {
 	margin: 0 auto 20px;
@@ -94,20 +96,35 @@ a.discount__button {
 .rewiews__name {
 	color: #DB484B;
 	.roboto-black;
+	display: block;
 	&:before, &:after{
 		color: #fff;
 		content: "-";
 		padding-right: 3px;
 		padding-left: 3px;
+		.roboto-regular;
+	}
+	@media (min-width:768px) {
+		display: inline;
 	}
 }
 .rewiews__work {
 	color: #777777;
 	.roboto-regular;
-	&:after{
+	display: block;
+	&:after, &:before{
 		color: #fff;
 		content: "-";
 		padding-right: 3px;
 		padding-left: 3px;
+	}
+	@media (min-width:768px) {
+		display: inline;
+		&:before{
+			color: #fff;
+			content: "";
+			padding-right: 0px;
+			padding-left: 0px;
+		}
 	}
 }

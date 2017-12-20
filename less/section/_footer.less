@@ -1,0 +1,248 @@
+.footer {
+	background: #252525;
+}
+.top-footer {
+	padding-top: 30px !important;
+	padding-bottom: 50px !important;
+}
+.top-footer__left-box {
+	display: block;
+	height: 230px;
+	@media (min-width:768px) {		
+		border-right: 1px dotted #6D6D6D;
+	}
+}
+.top-footer__left-tite {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+	display: block;
+	.roboto-regular;
+}
+.top-footer__left-text {
+	font-size: 13px;
+	line-height: 22px;
+	display: block;
+	color: #6D6D6D;
+	.roboto-light;
+}
+.top-footer__left-list {
+	font-size: 13px;
+	display: block;
+	color: #6D6D6D;
+	.roboto-light;
+	margin: 0;
+	padding: 0 0px 0 18px;		
+	li{
+		margin: 15px 0;
+		padding: 0;
+		span{.roboto-regular;}
+	}
+
+}
+.top-footer__menu {
+	height: 230px;
+	border-right: 1px dotted #6D6D6D;
+}
+.top-footer__menu-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+	display: block;
+	.roboto-regular;
+}
+.top-footer__menu-list {
+	font-size: 13px;
+	display: block;
+	color: #6D6D6D;
+	.roboto-light;
+	margin: 0;
+	padding: 0 0 0 15px;	
+	list-style-type: none;
+	li{
+		margin: 15px 0;
+		padding: 0px 8px 0px 0px;		
+		position: relative;
+		&:before{
+				content: "\f0da";
+				font-family: FontAwesome;
+				position: absolute;
+				top: -2px;
+				left: -16px;
+				font-size: 14px;	
+				color: @active-color;				
+		}
+		a{
+			text-decoration: none;
+			color: #6D6D6D;
+			&:hover{
+				color: @active-color-hover;
+			}
+		}
+	}
+}
+.top-footer__category {
+	height: 230px;
+	@media (min-width:992px) {		
+		border-right: 1px dotted #6D6D6D;
+	}
+}
+.top-footer__category-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+	display: block;
+	.roboto-regular;
+}
+.top-footer__category-list {
+	font-size: 13px;
+	display: block;
+	color: #6D6D6D;
+	.roboto-light;
+	margin: 0;
+	padding: 0 0px 0 18px;	
+	list-style-type: none;
+	li{
+		margin: 15px 0;
+		padding: 0px 8px 0px 0px;		
+		position: relative;
+		&:before{
+				content: "\f0da";
+				font-family: FontAwesome;
+				position: absolute;
+				top: -2px;
+				left: -16px;
+				font-size: 14px;	
+				color: @active-color;				
+		}
+		a{
+			text-decoration: none;
+			color: #6D6D6D;
+			&:hover{
+				color: @active-color-hover;
+			}
+		}
+	}
+}
+.top-footer__subscribe {
+	// display: block;
+	// margin-top: 100px;
+	// @media (min-width:992px) {		
+	// 	padding-top: 0;
+	// }
+}
+.top-footer__subscribe-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+	display: block;
+	.roboto-regular;
+}
+.top-footer__subscribe-text{
+	font-size: 13px;
+	line-height: 22px;
+	display: block;
+	color: #6D6D6D;
+	.roboto-light;
+}
+.top-footer__subscribe-box {
+	margin: 10px 0px 20px;
+	input{
+		display: inline-block;
+		outline: none;
+		height: 44px;
+		width: 260px;
+		padding: 15px;
+		border: none;
+		margin-right: 10px;
+		border-radius: 5px;	
+		.roboto-regular;
+	}
+	button{
+		display: inline-block;
+		outline: none;
+		height: 44px;
+		padding: 0 35px;
+		background: #3C3C3C;
+		color: #fff;
+		border: none;
+		border-radius: 5px;	
+		.roboto-regular;
+		&:hover{
+			background: @active-color-hover;
+		}
+	}
+}
+.top-footer__social-title {
+	margin-top: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 13px;
+	text-transform: uppercase;
+	display: block;
+	.roboto-regular;
+}
+.top-footer__social-box {
+	font-size: 0;
+	color: #fff;
+	a{
+		color: #fff;
+		text-decoration: none;
+	}
+	.fa-facebook {
+		background: #6078aa;
+	}
+	.fa-twitter {
+		background: #00abf0;
+	}
+	.fa-instagram {
+		background: #BC58B4;
+	}
+	.fa-linkedin {
+		background: #0073b2;
+	}
+	.fa-reddit-alien {
+		background: #3d3d3d;
+	}
+	.fa-google {
+		background: #d95232;
+	}
+	.fa{
+		font-size: 14px;
+		margin-right: 3px;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		border-radius: 3px;
+		&:hover{
+			background: #3d3d3d;
+		}
+	}
+}
+.bottom-footer{
+	background: #000;
+	padding: 20px;
+}
+.bottom-footer__text{
+	text-align: center;
+	.roboto-black;
+}
