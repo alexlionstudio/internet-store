@@ -183,14 +183,18 @@
 		display: inline-block;
 		outline: none;
 		height: 44px;
-		padding: 0 35px;
 		background: #3C3C3C;
 		color: #fff;
 		border: none;
-		border-radius: 5px;	
+		border-radius: 5px;
+		width: 30%;	
 		.roboto-regular;
 		&:hover{
 			background: @active-color-hover;
+		}
+		@media (min-width:768px) {			
+			padding: 0 35px;
+			width: auto;
 		}
 	}
 }

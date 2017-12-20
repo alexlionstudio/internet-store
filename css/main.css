@@ -1060,17 +1060,23 @@ a.discount__button:hover {
   display: inline-block;
   outline: none;
   height: 44px;
-  padding: 0 35px;
   background: #3C3C3C;
   color: #fff;
   border: none;
   border-radius: 5px;
+  width: 30%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
 }
 .top-footer__subscribe-box button:hover {
   background: #ad6ce7;
+}
+@media (min-width: 768px) {
+  .top-footer__subscribe-box button {
+    padding: 0 35px;
+    width: auto;
+  }
 }
 .top-footer__social-title {
   margin-top: 0;
