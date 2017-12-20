@@ -1,11 +1,10 @@
-$(document).ready(function() {
+// pageloader - иконка перед загрузкой страницы
+window.onload = function() {
+	$(".loader-icon").delay(300).fadeOut("slow");
+	$("#pageloader").delay(1200).fadeOut("slow");
+};
 
-	// pageloader - иконка перед загрузкой страницы
-	window.onload = function(e) {
-		e.preventDefault();
-		$(".loader-icon").delay(300).fadeOut("slow");
-		$("#pageloader").delay(1200).fadeOut("slow");
-	};
+$(document).ready(function() {
 		
 	// owlcorusel
 	$('#slider-container').owlCarousel({
