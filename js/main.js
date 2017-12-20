@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 	// pageloader - иконка перед загрузкой страницы
-	window.onload = function() {
+	window.onload = function(e) {
+		e.preventDefault();
 		$(".loader-icon").delay(300).fadeOut("slow");
 		$("#pageloader").delay(1200).fadeOut("slow");
 	};
