@@ -1000,6 +1000,14 @@ a.discount__button:hover {
 .top-footer__category-list li a:hover {
   color: #ad6ce7;
 }
+.top-footer__subscribe {
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .top-footer__subscribe {
+    margin-top: 0px;
+  }
+}
 .top-footer__subscribe-title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -1029,7 +1037,7 @@ a.discount__button:hover {
   display: inline-block;
   outline: none;
   height: 44px;
-  width: 260px;
+  width: 60%;
   padding: 15px;
   border: none;
   margin-right: 10px;
@@ -1037,6 +1045,16 @@ a.discount__button:hover {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
+}
+@media (min-width: 768px) {
+  .top-footer__subscribe-box input {
+    width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .top-footer__subscribe-box input {
+    width: 60%;
+  }
 }
 .top-footer__subscribe-box button {
   display: inline-block;
