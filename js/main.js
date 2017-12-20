@@ -63,4 +63,40 @@ $(document).ready(function() {
 		        'close'
 		    ],
     });
+
+
+   	//  -------------------------------------------------
+   	//                jQuery - Калькулятор
+	//  -------------------------------------------------
+
+   	// корзина
+   	// ценик
+   	// запоминаем товары
+   	// считаем цены
+   	// можно удалить товар
+
+   	// add-to-cart - добавить продукт кнопка
+   	// var test;
+   	// alert(test);
+
+
+   	//  отметили на странице выбранные блоки (товары)
+   	$('.add-to-cart').on('click',function(){
+   		//  Обязательно использовать селектор this иначе выбирем кучу одинаковых классов 
+   		$(this).closest('.store__card-box').attr('data-shop','choosed');
+   		var test = searchChoosedProducts();
+   		alert(test);
+   	});
+   	// Фунцция - ищем выбранные блоки -- Ниже запутался
+   	function searchChoosedProducts(finded){
+
+   		// Два варианты рабочих кодов
+   		// 1 вариант
+   		// var finded = $('.store__card-box[data-shop=choosed]').children('.store__price').data('value');
+		// 2 вариант
+		var finded = $('.store__card-box[data-shop=choosed]').children('.store__price').attr('data-value');
+		var finded = parseInt(finded);
+   		// alert(finded);
+   		return finded;
+   	}
 });
